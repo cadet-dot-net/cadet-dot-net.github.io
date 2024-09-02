@@ -1,0 +1,37 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 8%;
+    max-height: 20%;
+}
+
+footer * {
+    color: wheat;
+}
+
+#console {
+    width: inherit;
+    background-color:#060e0e;
+    padding: 5px 10px;
+}
+
+#console * {
+    background-color:#060e0e;
+}
+
+#console > input {
+    margin-left: 20px;
+    float: right;
+    width: inherit;
+}
+
+#console > span {
+    float: left;
+}
+
+input {
+    border: 0;
+    outline: 0;
+    overflow: hidden;
+}
