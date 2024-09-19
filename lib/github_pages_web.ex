@@ -43,7 +43,7 @@ defmodule GithubPagesWeb do
         layouts: [html: GithubPagesWeb.Layouts]
 
       import Plug.Conn
-      import GithubPagesWeb.Gettext
+      use Gettext, backend: GithubPagesWeb.Gettext
 
       unquote(verified_routes())
     end
@@ -85,7 +85,7 @@ defmodule GithubPagesWeb do
       import Phoenix.HTML
       # Core UI components and translation
       import GithubPagesWeb.CoreComponents
-      import GithubPagesWeb.Gettext
+      use Gettext, backend: GithubPagesWeb.Gettext
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS

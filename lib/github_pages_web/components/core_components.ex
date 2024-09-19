@@ -17,7 +17,7 @@ defmodule GithubPagesWeb.CoreComponents do
   use Phoenix.Component
 
   alias Phoenix.LiveView.JS
-  import GithubPagesWeb.Gettext
+  use Gettext, backend: GithubPagesWeb.Gettext
 
   @doc """
   Renders a modal.
