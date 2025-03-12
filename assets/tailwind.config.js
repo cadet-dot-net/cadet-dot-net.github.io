@@ -15,6 +15,12 @@ module.exports = {
     extend: {
       colors: {
         brand: "#FD4F00",
+      },
+      animation: {
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      backgroundImage: {
+        'space-gradient': 'linear-gradient(to bottom right, #0a192f, #112240)',
       }
     },
   },
