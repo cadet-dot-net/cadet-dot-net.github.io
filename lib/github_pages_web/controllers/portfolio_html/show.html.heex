@@ -1,0 +1,37 @@
+<div class="min-h-screen bg-[#0a192f] relative overflow-hidden">
+  <!-- Particle canvas -->
+  <canvas id="particles" class="fixed inset-0 w-full h-full pointer-events-none"></canvas>
+  
+  <div class="relative z-10 max-w-4xl mx-auto px-4 py-16">
+    <div class="backdrop-blur-lg bg-white/10 rounded-lg overflow-hidden border border-cyan-200/20 shadow-2xl">
+      <div class="md:flex items-center">
+        <div class="md:flex-shrink-0">
+          <div class="h-48 w-full md:w-48 relative overflow-hidden rounded-r-full">
+            <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/30 to-purple-500/30 mix-blend-overlay"></div>
+            <img class="h-full w-full object-cover" src={~p"/images/my-notion-face-customized-min-edit.png"} alt="Profile picture of a Notion-style drawing of me with a pencil on my ear." />
+          </div>
+        </div>
+        <div class="p-8">
+          <div class="text-cyan-300 text-sm font-mono tracking-wider">SOFTWARE ENGINEER & SPACE CADET</div>
+          <h1 class="mt-2 text-3xl leading-8 font-bold tracking-tight bg-gradient-to-r from-cyan-300 to-purple-300 text-transparent bg-clip-text">
+            Mars
+          </h1>
+          <p class="mt-4 text-lg text-cyan-100/80 leading-relaxed font-light">
+            Navigating the digital cosmos through elegant code and innovative solutions. 
+            Specializing in Elixir, Phoenix, and distributed systems that scale to infinity and beyond. 
+            When not deploying to production, you'll find me (GitHub) stargazing.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <.link navigate={~p"/"} class="inline-block mt-8 text-cyan-300 hover:text-cyan-100 transition-colors duration-300">
+      <div class="flex items-center space-x-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        <span>Back to home</span>
+      </div>
+    </.link>
+  </div>
+</div>
